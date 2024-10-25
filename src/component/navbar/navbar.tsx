@@ -39,7 +39,7 @@ function Navbar({
                 onClick={(e) => e.preventDefault()}
                 className="text-start"
               >
-                <p className="text-[20px] font-semibold"> Penarikan Data General Ledger</p>
+                <p className="text-base font-semibold">Hello Welcome !</p>
                 <p className="text-xs"> </p>
               </button>
             </Dropdown>
@@ -76,4 +76,17 @@ const items: MenuProps["items"] = [
   //     </a>
   //   ),
   // },
+  {
+    key: "1",
+    label: (
+      <div className="h-fit flex">
+        <ButtonDefault
+          text={"Logout"}
+          width="100%"
+          // onClick={useAuthentificationStore.getState().logout}
+        />
+        ,
+      </div>
+    ),
+  },
 ];

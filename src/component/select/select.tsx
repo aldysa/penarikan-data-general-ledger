@@ -21,10 +21,11 @@ const SelectedOption: React.FC<SelectedOptionProps> = ({
   };
 
   return (
-    <Space style={{ width: "150%" }} direction="vertical">
+    <Space style={{ width: "100%" }} direction="vertical">
       <Select
+        mode="multiple"
         allowClear
-        style={{ width: "150%" }}
+        style={{ width: "100%" }}
         placeholder="Please select"
         defaultValue={defaultValue}
         onChange={handleChange}

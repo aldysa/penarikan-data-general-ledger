@@ -1,37 +1,3 @@
-// import { ReactNode } from "react";
-
-// export interface IRoute {
-//   key?: string;
-//   label: string;
-//   link: string;
-//   icon?: ReactNode;
-//   children?: IRoute[];
-// }
-
-// export const menuItems: IRoute[] = [
-//   {
-//     label: "Process - 1",
-//     key: "1",
-//     link: "/",
-//   },
-//   {
-//     label: "Content Management",
-//     link: "#",
-//     children: [
-//       {
-//         label: "All Content",
-//         key: "2",
-//         link: "/content",
-//       },
-//       {
-//         label: "Manage Content",
-//         key: "3",
-//         link: "/content/add",
-//       },
-//     ],
-//   },
-// ];
-
 import { ReactNode } from "react";
 
 export interface IRoute {
@@ -44,13 +10,29 @@ export interface IRoute {
 
 export const menuItems: IRoute[] = [
   {
-    label: "Process - 1",
+    label: "Home",
     key: "1",
     link: "/",
   },
   {
-    label: "Add Page",
-    key: "add-page",
-    link: "/add-page",
+    label: "Check Perjalanan Dinas",
+    key: "2",
+    link: "/perjalanan-dinas",
+  },
+  {
+    label: "Content Management",
+    link: "#",
+    children: [
+      {
+        label: "All Content",
+        key: "3",
+        link: "/content",
+      },
+      {
+        label: "Manage Content",
+        key: "4",
+        link: "/content/add",
+      },
+    ],
   },
 ];

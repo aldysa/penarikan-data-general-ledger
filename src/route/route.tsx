@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import LayoutUser from "../component/layout/layout";
 import Home from "../page";
 import IndexPageOne from "../page/page1";
+import IndexCheckSPJ from "../page/spjPerjadin";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/perjalanan-dinas",
+        element: <IndexCheckSPJ />,
       },
       {
         path: "/page1",
